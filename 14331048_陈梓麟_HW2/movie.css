@@ -1,0 +1,116 @@
+*:not(dd) {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+	font-size: 8pt;
+	font-family:  Verdana, Tahoma, sans-serif;
+}
+.banner {
+	background: repeat-x url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+	height: 50px;
+}
+.banner>img {
+	width: 100%;
+	height: 50px;
+}
+h1 {
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-align: center;
+	margin: 20px 0 20px;
+}
+.content {
+	width: 800px;
+	margin: 0 auto 0;
+	border: 4px solid gray;
+}
+.content_right {
+	float:right;
+	width: 250px;
+}
+.content_left {
+	float:left;
+	width: 550px;
+}
+.rotten {
+	background: repeat-x url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+	height: 83px;
+	margin-bottom: 10px;
+}
+.rotten span:first-of-type {
+	font-weight: bold;
+	font-size: 48pt;
+	color: red;
+	vertical-align:bottom;
+}
+.rotten span:last-of-type {
+	font-size: 8pt;
+	color: white;
+	vertical-align: 130%;
+}
+.reviews_left, .reviews_right {
+	float:left;
+	width:47%;
+	margin-left: 2%;
+}
+.reviews_right {
+	margin-right: 2%;
+}
+.review {
+	margin-bottom: 3em; 
+}
+.review .quote q {
+	font-weight: bold;
+	font-size: 8pt;
+
+}
+.review .quote {
+	background: #E1D697;
+	height: auto;
+	border:2px solid gray;
+	padding: 8px;
+	margin-bottom:8px;
+}
+.review .quote img {
+	/*display: block;*/
+	float: left;
+	margin-right: 5px;
+}
+.review > p > img {
+	float: left;
+	margin-right: 5px;
+
+}
+.review > p {
+	font-style: italic;
+}
+.content_right > dl {
+	background: #A3B964;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	padding: 10px;
+
+}
+.content_right > dl > dd {
+	margin-bottom: 10px;
+}
+.content_right > dl > dt {
+	font-weight: bold;
+}
+p.bottom {
+	text-align: center;	
+	clear:both;
+	background: #A2B964;
+	padding: 5px;
+}
+.test {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	/* float: right; */
+	width: auto;
+	height:auto;
+}
