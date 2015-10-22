@@ -1,275 +1,222 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 ul {
-	list-style-type: none;
-}
+  list-style-type: none; }
+
 #at-plus-container {
-	/*width: 200px;
-	height: 240px;*/
-	width: 25px;
-	height: 25px;
-}
-#bottom-positioner {
-	position: absolute;
-	bottom: 100px;
-	left:49%;
-}
+  width: 25px;
+  height: 25px; }
+  #at-plus-container #bottom-positioner {
+    position: absolute;
+    bottom: 100px;
+    left: 49%; }
+
 #button {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-}
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; }
+  #button:hover .icon {
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    -moz-transition: all 0.5s ease-in-out 0.5s;
+    -ms-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+    background: #343DA4 center no-repeat url("assets/images/atplus_green.png");
+    background-size: 18px 14px;
+    background-position: 5px 6px;
+    background-origin: content-box;
+    border-radius: 22.75px; }
+  #button:hover .mask {
+    -webkit-transform: translate(-54px, -36px);
+    -moz-transform: translate(-54px, -36px);
+    -ms-transform: translate(-54px, -36px);
+    -o-transform: translate(-54px, -36px);
+    transform: translate(-54px, -36px);
+    opacity: 1; }
+  #button:hover .history {
+    -webkit-transform: translate(-68px, 0px);
+    -moz-transform: translate(-68px, 0px);
+    -ms-transform: translate(-68px, 0px);
+    -o-transform: translate(-68px, 0px);
+    transform: translate(-68px, 0px);
+    opacity: 1; }
+  #button:hover .message {
+    -webkit-transform: translate(-54px, 35px);
+    -moz-transform: translate(-54px, 35px);
+    -ms-transform: translate(-54px, 35px);
+    -o-transform: translate(-54px, 35px);
+    transform: translate(-54px, 35px);
+    opacity: 1; }
+  #button:hover .setting {
+    -webkit-transform: translate(-27px, 57px);
+    -moz-transform: translate(-27px, 57px);
+    -ms-transform: translate(-27px, 57px);
+    -o-transform: translate(-27px, 57px);
+    transform: translate(-27px, 57px);
+    opacity: 1; }
+  #button:hover .sign {
+    -webkit-transform: translate(-17px, -55px);
+    -moz-transform: translate(-17px, -55px);
+    -ms-transform: translate(-17px, -55px);
+    -o-transform: translate(-17px, -55px);
+    transform: translate(-17px, -55px);
+    opacity: 1; }
+  #button:hover .info {
+    -webkit-transform: translate(-50px, -150px);
+    -moz-transform: translate(-50px, -150px);
+    -ms-transform: translate(-50px, -150px);
+    -o-transform: translate(-50px, -150px);
+    transform: translate(-50px, -150px);
+    width: 120px;
+    height: 120px; }
+  #button:hover #control-ring-container {
+    width: 150px;
+    height: 150px; }
+
 .icon {
-	z-index: 999;
-	background: #9AA0D4 center no-repeat url('assets/images/atplus_white.png');
-	background-size:  auto 16px;
-	background-origin: content-box;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	position: absolute;
-	/*left:125px;
-	top:138px;*/
-	top:;
-	-webkit-transition: all .5s ease-in-out 1s;
-	   -moz-transition: all .5s ease-in-out 1s;
-	    -ms-transition: all .5s ease-in-out 1s;
-	     -o-transition: all .5s ease-in-out 1s;
-	        transition: all .5s ease-in-out 1s;
-}
+  z-index: 999;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #9AA0D4 center no-repeat url("assets/images/atplus_white.png");
+  background-size: auto 16px;
+  background-origin: content-box;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out 1s;
+  -moz-transition: all 0.5s ease-in-out 1s;
+  -ms-transition: all 0.5s ease-in-out 1s;
+  -o-transition: all 0.5s ease-in-out 1s;
+  transition: all 0.5s ease-in-out 1s; }
+
 .info {
-	/*width: 120px;
-	height: 120px;*/
-	width: 10px;
-	height: 10px;
-	overflow: hidden;
-	background:#7E7E7E;
-	position: absolute;
-	border-radius:50%; 
-	/*left:133px;
-	top:145px;*/
-	top:7.5px;
-	left:7.5px;
-	z-index: 2;
-	-webkit-transition: all .5s ease-in-out 0.5s;
-	   -moz-transition: all .5s ease-in-out 0.5s;
-	    -ms-transition: all .5s ease-in-out 0.5s;
-	     -o-transition: all .5s ease-in-out 0.5s;
-	        transition: all .5s ease-in-out 0.5s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  background: #7E7E7E;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -ms-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s; }
+  .info .page {
+    position: relative; }
+  .info .user {
+    top: 8px;
+    left: 35px; }
+    .info .user span {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      color: white; }
+  .info .comment {
+    top: 15px;
+    left: 28px; }
+    .info .comment span {
+      position: absolute;
+      top: -8px;
+      left: 32px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      color: white; }
+  .info .mine {
+    position: relative; }
+    .info .mine span {
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 17px;
+      color: #17DC94; }
+  .info .posted {
+    top: 20px;
+    left: 15px; }
+  .info .like {
+    top: -6px;
+    left: 65px; }
 
-
-}
-.page {
-	position: relative;
-}
-.user {
-	top:8px;
-	left:35px;
-}
-.user span {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	text-align: center;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 15px;
-	color: white;
-}
-	
-.comment {
-	top:15px;
-	left:28px;
-}
-.comment span {
-	position: absolute;
-	top:-8px;
-	left: 32px;
-	width: 30px;
-	height: 30px;
-	text-align: center;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 28px;
-	color: white;
-}
-.mine {
-	position: relative;
-}
-.mine span {
-	position: absolute;
-	width: 23px;
-	height: 23px;
-	text-align: center;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 17px;
-	color: #17DC94;
-}
-.posted {
-	top:20px;
-	left:15px;
-}
-.like {
-	top:-6px;
-	left:65px;
-}
 #control-ring-container {
-	/*width: 150px;
-	height: 150px;*/
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	z-index: -1;
-	/*top: 90px;
-	left:50px;*/
-	top:-50px;
-	left:-70px;
-}
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -50px;
+  left: -70px; }
+  #control-ring-container .button {
+    z-index: -2;
+    background-size: auto;
+    background-origin: content-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    -moz-transition: all 0.5s ease-in-out 0.5s;
+    -ms-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s;
+    opacity: 0; }
+  #control-ring-container .mask {
+    background: #676767 center no-repeat url("assets/images/nomask.png");
+    background-size: 16px auto;
+    left: 73px;
+    top: 45px; }
+  #control-ring-container .history {
+    background: #676767 center no-repeat url("assets/images/history.png");
+    background-size: 16px auto;
+    left: 73px;
+    top: 45px; }
+  #control-ring-container .message {
+    position: relative;
+    background: #676767 center no-repeat url("assets/images/message.png");
+    background-size: 16px auto;
+    left: 73px;
+    top: 45px; }
+  #control-ring-container .message .unread {
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #F5C3BB; }
+  #control-ring-container .setting {
+    background: #676767 center no-repeat url("assets/images/setting.png");
+    background-size: 16px auto;
+    left: 73px;
+    top: 45px; }
+  #control-ring-container .sign {
+    background: #676767 center no-repeat url("assets/images/signin.png");
+    background-size: 16px auto;
+    left: 73px;
+    top: 45px; }
 
-.button {
-	z-index: -2;
-	background-size:  auto;
-	background-origin: content-box;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	position: absolute;
-	-webkit-transition: all .5s ease-in-out 0.5s;
-	   -moz-transition: all .5s ease-in-out 0.5s;
-	    -ms-transition: all .5s ease-in-out 0.5s;
-	     -o-transition: all .5s ease-in-out 0.5s;
-	        transition: all .5s ease-in-out 0.5s;
-	opacity: 0;
-}
-.mask {
-	background: #676767 center no-repeat url('assets/images/nomask.png');
-	background-size: 16px auto;
-	/*left:13px;
-	top:9px;*/
-	left:73px;
-	top:45px;
-}
-
-.history {
-	background: #676767 center no-repeat url('assets/images/history.png');
-	background-size: 16px auto;
-	/*top:45px;
-	left: 5px;*/
-	left:73px;
-	top:45px;
-}
-.message {
-	position: relative;
-	background: #676767 center no-repeat url('assets/images/message.png');
-	background-size: 16px auto;
-	/*top:80px;
-	left: 19px;*/
-	left:73px;
-	top:45px;
-}
-.message .unread{
-	display: block;
-	position: absolute;
-	top:-3px;
-	left:20px;
-	width: 16px;
-	height: 16px;
-	background: red;
-	border-radius: 50%;
-	text-align: center;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 12px;
-	color: #F5C3BB;
-}
-.setting {
-	background: #676767 center no-repeat url('assets/images/setting.png');
-	background-size: 16px auto;
-	/*top:102px;
-	left:50px;*/
-	left:73px;
-	top:45px;
-}
-.sign {
-	background: #676767 center no-repeat url('assets/images/signin.png');
-	background-size: 16px auto;
-	/*top:98px;
-	left:90px;*/
-	left:73px;
-	top:45px;
-}
-#button:hover .icon {
-	-webkit-transition: all .5s ease-in-out 0.5s;
-	   -moz-transition: all .5s ease-in-out 0.5s;
-	    -ms-transition: all .5s ease-in-out 0.5s;
-	     -o-transition: all .5s ease-in-out 0.5s;
-	        transition: all .5s ease-in-out 0.5s;
-	-webkit-transform: scale(1.8);
-	   -moz-transform: scale(1.8);
-	    -ms-transform: scale(1.8);
-	     -o-transform: scale(1.8);
-	        transform: scale(1.8);
-	background: #343DA4 center no-repeat url('assets/images/atplus_green.png');
-	background-size:  18px 14px;
-	background-position: 5px 6px;
-	border-radius: 22.75px;
-	background-origin: content-box;
-}
-#button:hover .mask {
-	-webkit-transform: translate(-54px,-36px);
-	   -moz-transform: translate(-54px,-36px);
-	    -ms-transform: translate(-54px,-36px);
-	     -o-transform: translate(-54px,-36px);
-	        transform: translate(-54px,-36px);
-	opacity: 1;
-}
-#button:hover .history {
-	-webkit-transform: translate(-68px,0px);
-	   -moz-transform: translate(-68px,0px);
-	    -ms-transform: translate(-68px,0px);
-	     -o-transform: translate(-68px,0px);
-	        transform: translate(-68px,0px);
-	opacity: 1;
-}
-#button:hover .message {
-	-webkit-transform: translate(-54px,35px);
-	   -moz-transform: translate(-54px,35px);
-	    -ms-transform: translate(-54px,35px);
-	     -o-transform: translate(-54px,35px);
-	        transform: translate(-54px,35px);
-	opacity: 1;
-}
-#button:hover .setting {
-	-webkit-transform: translate(-27px,57px);
-	   -moz-transform: translate(-27px,57px);
-	    -ms-transform: translate(-27px,57px);
-	     -o-transform: translate(-27px,57px);
-	        transform: translate(-27px,57px);
-	opacity: 1;
-}
-#button:hover .sign {
-	-webkit-transform: translate(17px,55px);
-	   -moz-transform: translate(17px,55px);
-	    -ms-transform: translate(17px,55px);
-	     -o-transform: translate(17px,55px);
-	        transform: translate(17px,55px);
-	opacity: 1;
-}
-#button:hover .info {
-	-webkit-transform: translate(-50px,-150px);
-	   -moz-transform: translate(-50px,-150px);
-	    -ms-transform: translate(-50px,-150px);
-	     -o-transform: translate(-50px,-150px);
-	        transform: translate(-50px,-150px);
-	width: 120px;
-	height: 120px;
-}
-#button:hover #control-ring-container {
-	width: 150px;
-	height: 150px;
-
-}
+/*# sourceMappingURL=index.css.map */
