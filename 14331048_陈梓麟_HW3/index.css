@@ -7,13 +7,20 @@ ul {
 	list-style-type: none;
 }
 #at-plus-container {
-	width: 200px;
-	height: 240px;
-	margin: 10px auto 0px;
-	/*border: 1px solid black;*/
+	/*width: 200px;
+	height: 240px;*/
+	width: 25px;
+	height: 25px;
 }
 #bottom-positioner {
-	position: relative;
+	position: absolute;
+	bottom: 100px;
+	left:49%;
+}
+#button {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
 }
 .icon {
 	z-index: 999;
@@ -24,8 +31,9 @@ ul {
 	height: 25px;
 	border-radius: 50%;
 	position: absolute;
-	left:125px;
-	top:138px;
+	/*left:125px;
+	top:138px;*/
+	top:;
 	-webkit-transition: all .5s ease-in-out 1s;
 	   -moz-transition: all .5s ease-in-out 1s;
 	    -ms-transition: all .5s ease-in-out 1s;
@@ -41,8 +49,10 @@ ul {
 	background:#7E7E7E;
 	position: absolute;
 	border-radius:50%; 
-	left:133px;
-	top:145px;
+	/*left:133px;
+	top:145px;*/
+	top:7.5px;
+	left:7.5px;
 	z-index: 2;
 	-webkit-transition: all .5s ease-in-out 0.5s;
 	   -moz-transition: all .5s ease-in-out 0.5s;
@@ -108,14 +118,18 @@ ul {
 	left:65px;
 }
 #control-ring-container {
-	width: 150px;
-	height: 150px;
+	/*width: 150px;
+	height: 150px;*/
+	width: 0px;
+	height: 0px;
 	position: absolute;
 	z-index: -1;
-	top: 90px;
-	left:50px;
-	/*background: #cccccc;*/
+	/*top: 90px;
+	left:50px;*/
+	top:-50px;
+	left:-70px;
 }
+
 .button {
 	z-index: -2;
 	background-size:  auto;
@@ -188,7 +202,7 @@ ul {
 	left:73px;
 	top:45px;
 }
-.apb:hover > .icon {
+#button:hover .icon {
 	-webkit-transition: all .5s ease-in-out 0.5s;
 	   -moz-transition: all .5s ease-in-out 0.5s;
 	    -ms-transition: all .5s ease-in-out 0.5s;
@@ -205,7 +219,7 @@ ul {
 	border-radius: 22.75px;
 	background-origin: content-box;
 }
-.apb:hover ~ div .mask  {
+#button:hover .mask {
 	-webkit-transform: translate(-54px,-36px);
 	   -moz-transform: translate(-54px,-36px);
 	    -ms-transform: translate(-54px,-36px);
@@ -213,7 +227,7 @@ ul {
 	        transform: translate(-54px,-36px);
 	opacity: 1;
 }
-.apb:hover ~ div .history  {
+#button:hover .history {
 	-webkit-transform: translate(-68px,0px);
 	   -moz-transform: translate(-68px,0px);
 	    -ms-transform: translate(-68px,0px);
@@ -221,7 +235,7 @@ ul {
 	        transform: translate(-68px,0px);
 	opacity: 1;
 }
-.apb:hover ~ div .message  {
+#button:hover .message {
 	-webkit-transform: translate(-54px,35px);
 	   -moz-transform: translate(-54px,35px);
 	    -ms-transform: translate(-54px,35px);
@@ -229,7 +243,7 @@ ul {
 	        transform: translate(-54px,35px);
 	opacity: 1;
 }
-.apb:hover ~ div .setting  {
+#button:hover .setting {
 	-webkit-transform: translate(-27px,57px);
 	   -moz-transform: translate(-27px,57px);
 	    -ms-transform: translate(-27px,57px);
@@ -237,7 +251,7 @@ ul {
 	        transform: translate(-27px,57px);
 	opacity: 1;
 }
-.apb:hover ~ div .sign  {
+#button:hover .sign {
 	-webkit-transform: translate(17px,55px);
 	   -moz-transform: translate(17px,55px);
 	    -ms-transform: translate(17px,55px);
@@ -245,7 +259,7 @@ ul {
 	        transform: translate(17px,55px);
 	opacity: 1;
 }
-.apb:hover ~ div .info {
+#button:hover .info {
 	-webkit-transform: translate(-50px,-150px);
 	   -moz-transform: translate(-50px,-150px);
 	    -ms-transform: translate(-50px,-150px);
@@ -253,4 +267,9 @@ ul {
 	        transform: translate(-50px,-150px);
 	width: 120px;
 	height: 120px;
+}
+#button:hover #control-ring-container {
+	width: 150px;
+	height: 150px;
+
 }
