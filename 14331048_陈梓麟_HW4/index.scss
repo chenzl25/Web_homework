@@ -45,8 +45,8 @@ ul {
 			@include transition(all .5s ease-in-out 0.5s);
 			@include scale(1.8);
 			background: #343DA4 center no-repeat url('assets/images/atplus_green.png');
-			background-size:  18px 14px;
-			background-position: 5px 6px;
+			background-size:  20px 16px;
+			// background-position: 4px 5px;
 			background-origin: content-box;
 			border-radius: 22.75px;
 		}
@@ -67,7 +67,7 @@ ul {
 			opacity: 1;
 		}
 		.sign {
-			@include move(-17px, -55px);
+			@include move(17px, 55px);
 			opacity: 1;
 		}
 		.info {
