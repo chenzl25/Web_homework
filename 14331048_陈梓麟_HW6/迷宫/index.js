@@ -9,12 +9,7 @@ window.onload = function() {
 	var test_wall = document.querySelectorAll('.test_wall')[0];
 	var over = true;
 	var cheat = false;
-	start.addEventListener('mouseover', function(event) {
-		result.textContent = '';
-		over = false;
-		cheat = false;
-	});
-	for (i = 0; i < walls.length; i++) {
+	for (var i = 0; i < walls.length; i++) {
 		walls[i].addEventListener('mouseover', function(event) {
 			if (!over) {
 				result.textContent = 'You Lose';
@@ -22,10 +17,14 @@ window.onload = function() {
 				over = true;
 			}
 		});
-	test_wall.addEventListener('mouseover', function(event) {
-		if(!over) {
-			cheat = true;
-		}
+		walls[i].addEventListener('mouseout', function(event) {
+			event.target.classList.remove('warn');
+		});
+	}
+	start.addEventListener('mouseover', function(event) {
+		result.textContent = '';
+		over = false;
+		cheat = false;
 	});
 	end.addEventListener('mouseover', function(event) {
 		if (!over && !cheat) {
@@ -36,8 +35,9 @@ window.onload = function() {
 			over = true;
 		}
 	});
-		walls[i].addEventListener('mouseout', function(event) {
-			event.target.classList.remove('warn');
-		});
-	}
+	test_wall.addEventListener('mouseover', function(event) {
+		if(!over) {
+			cheat = true;
+		}
+	});
 };
