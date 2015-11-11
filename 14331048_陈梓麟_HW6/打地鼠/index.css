@@ -1,0 +1,89 @@
+@font-face {
+  font-family: My_Gothic;
+  src: url("DidactGothic.ttf"); }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: My_Gothic, sans-serif;
+  box-sizing: border-box; }
+
+header {
+  text-align: center; }
+
+h1 {
+  font-weight: lighter;
+  font-size: 25px;
+  margin-bottom: 10px; }
+
+h2 {
+  font-weight: lighter;
+  font-size: 18px; }
+
+.result {
+  width: 350px;
+  height: 80px;
+  margin: 10px auto 10px; }
+  .result .row1 {
+    width: 350px;
+    height: 40px; }
+    .result .row1 button {
+      float: left;
+      border-radius: 5px;
+      background: #FDFDFD;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-right: 50px; }
+    .result .row1 .time {
+      float: right; }
+      .result .row1 .time span {
+        display: inline-block;
+        border: 1px #ccc solid;
+        width: 40px;
+        margin-left: 5px; }
+  .result .row2 {
+    width: 350px;
+    height: 40px; }
+    .result .row2 .state {
+      float: left;
+      border: 1px #ccc solid;
+      width: 150px; }
+    .result .row2 .score {
+      float: right; }
+      .result .row2 .score span {
+        display: inline-block;
+        border: 1px #ccc solid;
+        width: 40px;
+        margin-left: 5px; }
+
+.wrapper {
+  position: relative;
+  width: 310px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px auto 10px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid; }
+  .wrapper table td {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px; }
+    .wrapper table td input {
+      display: block;
+      width: 20px;
+      height: 20px; }
+
+.shadow {
+  box-shadow: 0 0 5px 3px #3F97FB; }
+
+.instructions {
+  position: relative;
+  width: 650px;
+  margin: 10px auto 0;
+  bottom: -100px;
+  letter-spacing: 1px; }
+  .instructions span {
+    position: absolute;
+    left: -40px;
+    top: -30px; }
+
+/*# sourceMappingURL=index.css.map */
