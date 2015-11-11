@@ -30,8 +30,7 @@ ul {
     -o-transform: scale(1.8);
     transform: scale(1.8);
     background: #343DA4 center no-repeat url("assets/images/atplus_green.png");
-    background-size: 18px 14px;
-    background-position: 5px 6px;
+    background-size: 20px 16px;
     background-origin: content-box;
     border-radius: 22.75px; }
   #button:hover .mask {
@@ -63,11 +62,11 @@ ul {
     transform: translate(-27px, 57px);
     opacity: 1; }
   #button:hover .sign {
-    -webkit-transform: translate(-17px, -55px);
-    -moz-transform: translate(-17px, -55px);
-    -ms-transform: translate(-17px, -55px);
-    -o-transform: translate(-17px, -55px);
-    transform: translate(-17px, -55px);
+    -webkit-transform: translate(17px, 55px);
+    -moz-transform: translate(17px, 55px);
+    -ms-transform: translate(17px, 55px);
+    -o-transform: translate(17px, 55px);
+    transform: translate(17px, 55px);
     opacity: 1; }
   #button:hover .info {
     -webkit-transform: translate(-50px, -150px);
