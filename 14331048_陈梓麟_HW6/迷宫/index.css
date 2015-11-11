@@ -1,0 +1,139 @@
+@font-face {
+  font-family: My_Gothic;
+  src: url("DidactGothic.ttf"); }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: My_Gothic, sans-serif;
+  box-sizing: border-box; }
+
+header {
+  text-align: center; }
+
+h1, h2 {
+  font-weight: lighter; }
+
+.wall {
+  background: #EEEDEF;
+  border: 1px black solid;
+  position: absolute; }
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: 10px auto 10px; }
+  .wrapper .top_left {
+    width: 150px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border-right: 0;
+    border-bottom: 0; }
+  .wrapper .top_right {
+    width: 150px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    border-left: 0;
+    border-bottom: 0; }
+  .wrapper .top_mid {
+    width: 200px;
+    height: 50px;
+    left: 150px;
+    border-right: 0;
+    border-left: 0; }
+  .wrapper .mid_left {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    left: 0;
+    border-top: 0; }
+  .wrapper .mid_right {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    right: 0;
+    border-top: 0; }
+  .wrapper .mid_mid {
+    width: 100px;
+    height: 150px;
+    left: 200px;
+    bottom: 50px;
+    border-bottom: 0; }
+  .wrapper .bot_left {
+    width: 200px;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    border-right: 0; }
+  .wrapper .bot_right {
+    width: 200px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    border-left: 0; }
+  .wrapper .bot_mid {
+    width: 100px;
+    height: 50px;
+    left: 200px;
+    bottom: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0; }
+  .wrapper .test_wall {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    bottom: 30px;
+    right: -20px; }
+
+.start, .end {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 55px;
+  border: black 1px solid; }
+
+.start {
+  left: 0;
+  background: #89FC87;
+  z-index: 999; }
+
+.end {
+  right: 0;
+  background: #8787FC;
+  z-index: 999; }
+
+.start > span, .end > span {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  left: 10px; }
+
+.guide {
+  width: 550px;
+  margin: 10px auto 10px; }
+
+.little_wall {
+  width: 100px;
+  height: 30px;
+  margin: 10px auto 10px;
+  background: #EEEDEF;
+  border: 1px black solid; }
+
+footer {
+  width: 500px;
+  margin: 10px auto 10px; }
+
+.result {
+  width: 700px;
+  height: 30px;
+  margin: 10px auto 10px;
+  text-align: center;
+  font-size: 30px; }
+
+.warn {
+  background: red; }
+
+/*# sourceMappingURL=index.css.map */
