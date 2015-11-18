@@ -1,0 +1,126 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font: {
+		size:40px;
+		family: sans-serif;
+		weight:lighter;
+	}
+	text-align: center;
+}
+.bnt {
+	display: block;
+	width: 120px;
+	margin: 30px auto 0;
+	button {
+		border: 0;
+		box-shadow: 4px 4px 4px 0 #bbb;
+		width: 120px;
+		height: 40px;
+		background: #4286F5;
+		color: white;
+		padding {
+			left:30px;
+			right: 30px;
+			top: 10px;
+			bottom: 10px;
+		}
+		font: {
+			size:20px;
+			family: sans-serif;
+			// weight:bold;
+		}
+		-webkit-transition: all .25s linear;
+		   -moz-transition: all .25s linear;
+		    -ms-transition: all .25s linear;
+		     -o-transition: all .25s linear;
+		        transition: all .25s linear;
+		&:hover {
+			-webkit-transform: scale(1.05);
+			   -moz-transform: scale(1.05);
+			    -ms-transform: scale(1.05);
+			     -o-transform: scale(1.05);
+			        transform: scale(1.05);
+		}
+	}
+}
+.wrapper {
+	width: 352px;
+	height: 352px;
+	margin: 30px auto 0;
+}
+.picture {
+	float: left;
+	width: 88px;
+	height: 88px;
+	border: 1px solid #ccc;
+	background: url('panda.jpg') no-repeat;
+	background-image: content-box;
+	-webkit-transition: transform .15s linear;
+		   -moz-transition: transform .15s linear;
+		    -ms-transition: transform .15s linear;
+		     -o-transition: transform .15s linear;
+		        transition: transform .15s linear;
+	&:hover {
+	-webkit-transform: scale(1.05);
+			   -moz-transform: scale(1.04);
+			    -ms-transform: scale(1.04);
+			     -o-transform: scale(1.04);
+			        transform: scale(1.04);
+	}
+}
+.pos00 {
+	background-position: 0px 0px;
+}
+.pos01 {
+	background-position: -88px 0px;
+}
+.pos02 {
+	background-position: -88*2px 0px;
+}
+.pos03 {
+	background-position: -88*3px 0px;
+}
+.pos10 {
+	background-position: 0px -88px;
+}
+.pos11 {
+	background-position: -88px -88px;
+}
+.pos12 {
+	background-position: -88*2px -88px;
+}
+.pos13 {
+	background-position: -88*3px -88px;
+}
+.pos20 {
+	background-position: 0px -88*2px;
+}
+.pos21 {
+	background-position: -88px -88*2px;
+}
+.pos22 {
+	background-position: -88*2px -88*2px;
+}
+.pos23 {
+	background-position: -88*3px -88*2px;
+}
+.pos30 {
+	background-position: 0px -88*3px;
+}
+.pos31 {
+	background-position: -88px -88*3px;
+}
+.pos32 {
+	background-position: -88*2px -88*3px;
+}
+.pos33 {
+	// background-position: -88*3px -88*3px;
+	// border: 0;
+	// background:white;
+	// display: none;
+	visibility: hidden;
+}

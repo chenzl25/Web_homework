@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center; }
+
+.bnt {
+  display: block;
+  width: 120px;
+  margin: 30px auto 0; }
+  .bnt button {
+    border: 0;
+    box-shadow: 4px 4px 4px 0 #bbb;
+    width: 120px;
+    height: 40px;
+    background: #4286F5;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear; }
+    .bnt button padding {
+      left: 30px;
+      right: 30px;
+      top: 10px;
+      bottom: 10px; }
+    .bnt button:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05); }
+
+.wrapper {
+  width: 352px;
+  height: 352px;
+  margin: 30px auto 0; }
+
+.picture {
+  float: left;
+  width: 88px;
+  height: 88px;
+  border: 1px solid #ccc;
+  background: url("panda.jpg") no-repeat;
+  background-image: content-box;
+  -webkit-transition: transform .15s linear;
+  -moz-transition: transform .15s linear;
+  -ms-transition: transform .15s linear;
+  -o-transition: transform .15s linear;
+  transition: transform .15s linear; }
+  .picture:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04); }
+
+.pos00 {
+  background-position: 0px 0px; }
+
+.pos01 {
+  background-position: -88px 0px; }
+
+.pos02 {
+  background-position: -176px 0px; }
+
+.pos03 {
+  background-position: -264px 0px; }
+
+.pos10 {
+  background-position: 0px -88px; }
+
+.pos11 {
+  background-position: -88px -88px; }
+
+.pos12 {
+  background-position: -176px -88px; }
+
+.pos13 {
+  background-position: -264px -88px; }
+
+.pos20 {
+  background-position: 0px -176px; }
+
+.pos21 {
+  background-position: -88px -176px; }
+
+.pos22 {
+  background-position: -176px -176px; }
+
+.pos23 {
+  background-position: -264px -176px; }
+
+.pos30 {
+  background-position: 0px -264px; }
+
+.pos31 {
+  background-position: -88px -264px; }
+
+.pos32 {
+  background-position: -176px -264px; }
+
+.pos33 {
+  visibility: hidden; }
+
+/*# sourceMappingURL=index.css.map */
