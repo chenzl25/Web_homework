@@ -1,0 +1,34 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+th {
+	color: white;
+	text-align: left;
+}
+.blue {
+	background-color: #031B7F;
+	color: black;
+}
+.even {
+	background: #DDDDDD;
+}
+table {
+	 border-collapse: collapse;
+}
+th, td {
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+.up {
+	background: url('ascend.png') no-repeat right #949FE3;
+}
+.down {
+	background: url('descend.png') no-repeat right #949FE3;
+}
+
+#staff th {
+	padding-right: 25px;
+}
