@@ -29,15 +29,13 @@ $(document).ready(function() {
 		$(this).parent().children().not(this).addClass("blue");
 		$(this).removeClass("blue");
 	});
-
 });
 function my_sort(that, todo_tr, staff_tr, up) {
 	var tr = [];
-	if ($(that).parent().parent().parent().attr("id") == 'todo') {
+	if ($(that).parent().parent().parent().attr("id") == 'todo')
 		tr = todo_tr;
-	} else {
+	else
 		tr = staff_tr;
-	}
 	var index = $(that)[0].my_index;
 	var text_to_sort = [];
 	for (var i = 0; i < tr.length; i++) {
@@ -46,18 +44,14 @@ function my_sort(that, todo_tr, staff_tr, up) {
 			text_to_sort[i].push($(this).text());
 		})
 	}
-
 	text_to_sort.sort(function(a, b) {
-		if (up === true) {
+		if (up === true)
 			return a[index] > b[index]? 1: -1;
-		} else {
+		else
 			return a[index] < b[index]? 1: -1;
-		}
 	});
 
-	for (var i = 0; i < tr.length; i++) {
-		for (var j = 0; j < $(tr[i]).children().length; j++) {
+	for (var i = 0; i < tr.length; i++)
+		for (var j = 0; j < $(tr[i]).children().length; j++)
 			$(tr[i]).children()[j].textContent = text_to_sort[i][j];
-		}
-	}	
 }
