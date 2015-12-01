@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, #00FFFF 0%, #2385AE 50%, #42ABC8 100%); }
+
+h1 {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin-top: 50px; }
+
+.wrapper {
+  width: 350px;
+  height: 500px;
+  margin: 0 auto 0; }
+  .wrapper div {
+    height: 40px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left; }
+    .wrapper div span {
+      display: inline-block;
+      float: right;
+      width: 220px;
+      text-align: right;
+      overflow: hidden; }
+
+#back {
+  text-decoration: none; }
+  #back div {
+    text-align: center;
+    letter-spacing: 2px; }
+    #back div:hover {
+      background: #177494; }
+
+/*# sourceMappingURL=detail.css.map */

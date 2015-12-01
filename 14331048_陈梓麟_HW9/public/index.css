@@ -1,0 +1,106 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse farthest-corner at 45px 45px, #00FFFF 0%, #2385AE 50%, #42ABC8 100%); }
+
+h1 {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  padding-top: 30px; }
+
+.wrapper {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto 0; }
+
+form {
+  padding: 30px; }
+  form label {
+    display: none; }
+  form input {
+    font-size: 20px;
+    color: white;
+    width: 350px;
+    height: 40px;
+    display: inline-block;
+    outlie: none;
+    background: transparent;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 10px; }
+
+#reset, #submit {
+  letter-spacing: 2px;
+  box-shadow: 0 5px 2px 0px #177494; }
+  #reset:hover, #submit:hover {
+    background: #177494; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: white;
+  opacity: 0.5; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+  opacity: 0.5; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+  opacity: 0.5; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+  opacity: 0.5; }
+
+#message {
+  padding: 5px;
+  width: 350px; }
+
+.warning:before, .success:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.warning:before {
+  content: '\f071'; }
+
+.warning {
+  color: #D8000C;
+  background: transparent; }
+
+.success {
+  color: #4F8A10; }
+
+.success:before {
+  content: '\f00c'; }
+
+/*# sourceMappingURL=index.css.map */
