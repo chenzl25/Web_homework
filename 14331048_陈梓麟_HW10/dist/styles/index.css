@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#at-plus-container {
+  width: 25px;
+  height: 25px;
+}
+#at-plus-container #bottom-positioner {
+  position: absolute;
+  bottom: 100px;
+  left: 49%;
+}
+
+#button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+#button:hover .icon {
+  transition: all 0.5s ease-in-out 0.5s;
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  background: #343DA4 center no-repeat url("../images/atplus_green.png");
+  background-size: 20px 16px;
+  background-origin: content-box;
+  border-radius: 22.75px;
+}
+#button:hover .mask {
+  -webkit-transform: translate(-54px, -36px);
+  transform: translate(-54px, -36px);
+  opacity: 1;
+}
+#button:hover .history {
+  -webkit-transform: translate(-68px, 0px);
+  transform: translate(-68px, 0px);
+  opacity: 1;
+}
+#button:hover .message {
+  -webkit-transform: translate(-54px, 35px);
+  transform: translate(-54px, 35px);
+  opacity: 1;
+}
+#button:hover .setting {
+  -webkit-transform: translate(-27px, 57px);
+  transform: translate(-27px, 57px);
+  opacity: 1;
+}
+#button:hover .sign {
+  -webkit-transform: translate(17px, 55px);
+  transform: translate(17px, 55px);
+  opacity: 1;
+}
+#button:hover .info {
+  -webkit-transform: translate(-50px, -150px);
+  transform: translate(-50px, -150px);
+  width: 120px;
+  height: 120px;
+}
+#button:hover #control-ring-container {
+  width: 150px;
+  height: 150px;
+}
+
+.icon {
+  z-index: 999;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #9AA0D4 center no-repeat url("../images/atplus_white.png");
+  background-size: auto 16px;
+  background-origin: content-box;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out 1s;
+}
+
+.info {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  left: 12.5px;
+  background: #7E7E7E;
+  opacity: 0.9;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+.info span {
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  font-size: 40px;
+  font-weight: lighten;
+  color: #20BB83;
+}
+.info .page {
+  position: relative;
+}
+.info .user {
+  top: 8px;
+  left: 35px;
+}
+.info .user span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.info .comment {
+  top: 15px;
+  left: 28px;
+}
+.info .comment span {
+  position: absolute;
+  top: -8px;
+  left: 32px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+}
+.info .mine {
+  position: relative;
+}
+.info .mine span {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #17DC94;
+}
+.info .posted {
+  top: 20px;
+  left: 15px;
+}
+.info .like {
+  top: -6px;
+  left: 65px;
+}
+
+#control-ring-container {
+  z-index: -1;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -50px;
+  left: -70px;
+}
+#control-ring-container .button {
+  z-index: -2;
+  background-size: auto;
+  background-origin: content-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s ease-in-out 0.5s;
+  opacity: 0;
+}
+#control-ring-container .button .alpha {
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #20BB83;
+}
+#control-ring-container .mask {
+  background-size: 16px auto;
+  left: 73px;
+  top: 45px;
+}
+#control-ring-container .history {
+  background-size: 16px auto;
+  left: 73px;
+  top: 45px;
+}
+#control-ring-container .message {
+  background-size: 16px auto;
+  left: 73px;
+  top: 45px;
+}
+#control-ring-container .unread {
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background: red;
+  border-radius: 50%;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #F5C3BB;
+}
+#control-ring-container .setting {
+  background-size: 16px auto;
+  left: 73px;
+  top: 45px;
+}
+#control-ring-container .sign {
+  background-size: 16px auto;
+  left: 73px;
+  top: 45px;
+}
+
+.active {
+  background: blue;
+}
+
+.sleep {
+  background: #676767;
+}
