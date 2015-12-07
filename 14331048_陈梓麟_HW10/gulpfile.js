@@ -31,8 +31,8 @@ gulp.task('styles', function() {
   return sass('src/styles/*.scss', { style: 'expanded' })
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('dist/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
+    // .pipe(rename({ suffix: '.min' }))
+    // .pipe(minifycss())
     .pipe(gulp.dest('dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
@@ -44,12 +44,23 @@ gulp.task('scripts', function() {
     .pipe(jshint.reporter('default'))
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('dist/scripts'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(uglify())
+    // .pipe(rename({ suffix: '.min' }))
+    // .pipe(uglify())
     .pipe(gulp.dest('dist/scripts'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
-
+//S
+gulp.task('homework', function() {
+  return gulp.src(['src/S[1-5]/*.js', 'src/S[1-5]/index.html'])
+    .pipe(jshint('.jshintrc'))
+    .pipe(jshint.reporter('default'))
+    // .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('dist'))
+    // .pipe(rename({ suffix: '.min' }))
+    // .pipe(uglify())
+    .pipe(gulp.dest('dist'))
+    .pipe(notify({ message: 'homework task complete' }));
+})
 // Images
 gulp.task('images', function() {
   return gulp.src('src/images/**/*')
@@ -65,7 +76,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.start('styles', 'scripts', 'images', 'others', 'watch');
+  gulp.start('styles', 'scripts', 'images', 'others', 'homework', 'watch');
 });
 
 // Watch
@@ -77,6 +88,8 @@ gulp.task('watch', function() {
 
   // Watch .js files
   gulp.watch('src/scripts/**/*.js', ['scripts']);
+  //S[1-5]
+  gulp.watch('src/S[1-5]/*', ['homework']);
 
   // Watch image files
   gulp.watch('src/images/**/*', ['images']);
