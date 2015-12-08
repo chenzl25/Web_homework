@@ -3,6 +3,11 @@ $(document).ready(function() {
 	var Solution = {};
 	init.call(Solution);
 	// Solution.$button.bind('click', init());
+	Solution.$icon = $('.icon');
+	Solution.$icon.bind('click', function() {
+		Solution.$buttons.trigger('click');
+		Solution.$icon.unbind('click');
+	})
 });
 function init() {
 	var self = this;
@@ -26,9 +31,13 @@ function init() {
 	})
 	self.$button.bind('mouseleave', function() {
 		self.cnt = 0;
-		self.$info.text('');
+		self.$info.removeClass('sleep active').find('.total').text('');
 		self.$buttons.removeClass('sleep').addClass('active unfinish').find('.unread').hide();
-		self.$buttons.bind('click', five_click_generator(self));
+		// self.$buttons.unbind('click').bind('click', five_click_generator(self));
+		self.$icon.bind('click', function() {
+			self.$buttons.trigger('click');
+			self.$icon.unbind('click');
+		})
 	})
 }
 function five_click_generator(self) {
@@ -36,22 +45,26 @@ function five_click_generator(self) {
 		var that = this;
 		$(that).find('.unread').show();
 		$(that).find('.unread').text('...');
-		self.$buttons.unbind('click').addClass('sleep');
+		// self.$buttons.unbind('click').addClass('sleep');
 		getNumber(function(num) {
-			$(that).siblings().filter('.unfinish').removeClass('sleep').addClass('active').bind('click', five_click_generator(self));
+			// $(that).siblings().filter('.unfinish').removeClass('sleep').addClass('active').bind('click', five_click_generator(self));
 			$(that).find('.unread').text(num);
 			$(that).removeClass('active unfinish').addClass('sleep');
 			self.cnt++;
 			console.log(self.cnt);	
 			if (self.cnt == 5) {
 				self.$info.addClass('active');
+				setTimeout(function() {
+					self.$info.trigger('click');
+				}, 1500);
 			}
 		});
 	}
 }
+haha = 0;
 function getNumber(callback) {
 	var request = new XMLHttpRequest();
-	request.open('get', "/");
+	request.open('get', "/"+haha++);
 	request.send(null);
 	request.onreadystatechange = function() {
 		if (request.readyState == 4 && request.status == 200) {
@@ -59,6 +72,12 @@ function getNumber(callback) {
 			return;
 		}
 	};
+	// $.ajax({
+	//   method: "GET",
+	//   url: "/",
+	//   data: { name: "John", location: "Boston" }
+	// })
+	// .done(callback);
 }
 // window.onload = function() {
 // 	function ajax () {

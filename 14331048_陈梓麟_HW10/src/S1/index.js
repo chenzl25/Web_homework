@@ -26,7 +26,7 @@ function init() {
 	})
 	self.$button.bind('mouseleave', function() {
 		self.cnt = 0;
-		self.$info.text('');
+		self.$info.removeClass('sleep active').find('.total').text('');
 		self.$buttons.removeClass('sleep').addClass('active unfinish').find('.unread').hide();
 		self.$buttons.bind('click', five_click_generator(self));
 	})
@@ -59,6 +59,7 @@ function getNumber(callback) {
 			return;
 		}
 	};
+	
 }
 // window.onload = function() {
 // 	function ajax () {

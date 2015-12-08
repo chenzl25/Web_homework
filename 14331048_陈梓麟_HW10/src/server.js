@@ -7,7 +7,6 @@ var port = 3000;
 http.createServer(function(req,res){
   var pathname = url.parse(req.url).pathname;
   var mimeType = getMimeType(pathname);
-  console.log(pathname, mimeType);
   if (!!mimeType) {
     handlePage(req, res, pathname);
   } else {
@@ -51,7 +50,6 @@ function handlePage(req, res, pathname) {
     res.end();
   }
 }
-
 function handleAjax(req, res) {
   var random_time = 1000 + getRandomNumber(2000);
   var random_num  = 1 + getRandomNumber(9);
