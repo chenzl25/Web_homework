@@ -3,6 +3,15 @@ $(document).ready(function() {
 	var Solution = {};
 	init.call(Solution);
 	// Solution.$button.bind('click', init());
+	Solution.$icon = $('.icon');
+	Solution.$icon.bind('click', function() {
+		Solution.$buttons.filter(function() {
+			return $(this).find('.alpha').text() === Solution.array[0];
+		}).trigger('click');
+		// Solution.$buttons.first().trigger('click');
+		Solution.$array.show();
+		Solution.$icon.unbind('click');
+	})
 });
 function init() {
 	var self = this;
@@ -11,6 +20,10 @@ function init() {
 	self.$total = $('.total');
 	self.$buttons = $('.button');
 	self.$button = $('#button');
+	self.$array = $('#array');
+	self.array = randomArray();
+	self.$array.text(self.array.toString());
+	self.$array.hide();
 	self.$info.find('.total').text('');
 	self.$buttons.removeClass('sleep').addClass('active unfinish').find('.unread').hide();
 	self.$buttons.bind('click', five_click_generator(self));
@@ -26,9 +39,17 @@ function init() {
 	})
 	self.$button.bind('mouseleave', function() {
 		self.cnt = 0;
-		self.$info.text('');
+		self.$array.hide();
+		self.array = randomArray();
+		self.$array.text(self.array.toString());
+		self.$info.removeClass('sleep active').find('.total').text('');
 		self.$buttons.removeClass('sleep').addClass('active unfinish').find('.unread').hide();
 		self.$buttons.bind('click', five_click_generator(self));
+		self.$icon.bind('click', function() {
+			self.$buttons.first().trigger('click');
+			self.$array.show();
+			self.$icon.unbind('click');
+		})
 	})
 }
 function five_click_generator(self) {
@@ -46,6 +67,21 @@ function five_click_generator(self) {
 			if (self.cnt == 5) {
 				self.$info.addClass('active');
 			}
+			if (self.cnt != 5) {
+				setTimeout(function() {
+					// $(that).next().trigger('click')
+					// var tem = $(that).find('alpha').text();
+					var next_tem = self.array[self.cnt];
+					console.log(next_tem);
+					self.$buttons.filter(function() {
+						return $(this).find('.alpha').text() === next_tem;
+					}).trigger('click');
+				}, 1500);
+			} else {
+				setTimeout(function() {
+					self.$info.trigger('click');
+				}, 1500);
+			}	
 		});
 	}
 }
@@ -59,6 +95,13 @@ function getNumber(callback) {
 			return;
 		}
 	};
+}
+function randomArray() {
+	var to = [];
+	var from = ['A', 'B', 'C', 'D', 'E'];
+	while(from.length !== 0)
+		to.push(from.splice(Math.floor(Math.random()*from.length),1)[0])
+	return to;
 }
 // window.onload = function() {
 // 	function ajax () {
