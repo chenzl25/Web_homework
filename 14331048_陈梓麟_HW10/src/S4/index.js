@@ -2,13 +2,11 @@ $(document).ready(function() {
 	cnt = 0;
 	var Solution = {};
 	init.call(Solution);
-	// Solution.$button.bind('click', init());
 	Solution.$icon = $('.icon');
 	Solution.$icon.bind('click', function() {
 		Solution.$buttons.filter(function() {
 			return $(this).find('.alpha').text() === Solution.array[0];
 		}).trigger('click');
-		// Solution.$buttons.first().trigger('click');
 		Solution.$array.show();
 		Solution.$icon.unbind('click');
 	})
@@ -69,8 +67,6 @@ function five_click_generator(self) {
 			}
 			if (self.cnt != 5) {
 				setTimeout(function() {
-					// $(that).next().trigger('click')
-					// var tem = $(that).find('alpha').text();
 					var next_tem = self.array[self.cnt];
 					console.log(next_tem);
 					self.$buttons.filter(function() {
@@ -103,22 +99,3 @@ function randomArray() {
 		to.push(from.splice(Math.floor(Math.random()*from.length),1)[0])
 	return to;
 }
-// window.onload = function() {
-// 	function ajax () {
-// 		var posted = document.querySelectorAll('.posted span')[0];
-// 		var request = new XMLHttpRequest();
-// 		request.open('get', "/path?what=num");
-// 		request.send(null);
-// 		request.onreadystatechange = function() {
-// 			if (request.readyState == 4 && request.status == 200) {
-// 				var type = request.getResponseHeader('Content-Type');
-// 				if (type.match(/.*json/)) {
-// 					var data = JSON.parse(request.responseText);
-// 					posted.textContent = data.num;
-// 				}
-// 			}
-// 		};
-// 	}
-// 	var img_posted = document.querySelectorAll('.posted img')[0];
-// 	img_posted.addEventListener('click', ajax);
-// };

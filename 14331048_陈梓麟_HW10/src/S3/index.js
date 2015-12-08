@@ -2,7 +2,6 @@ $(document).ready(function() {
 	cnt = 0;
 	var Solution = {};
 	init.call(Solution);
-	// Solution.$button.bind('click', init());
 	Solution.$icon = $('.icon');
 	Solution.$icon.bind('click', function() {
 		Solution.$buttons.trigger('click');
@@ -33,7 +32,6 @@ function init() {
 		self.cnt = 0;
 		self.$info.removeClass('sleep active').find('.total').text('');
 		self.$buttons.removeClass('sleep').addClass('active unfinish').find('.unread').hide();
-		// self.$buttons.unbind('click').bind('click', five_click_generator(self));
 		self.$icon.bind('click', function() {
 			self.$buttons.trigger('click');
 			self.$icon.unbind('click');
@@ -45,9 +43,7 @@ function five_click_generator(self) {
 		var that = this;
 		$(that).find('.unread').show();
 		$(that).find('.unread').text('...');
-		// self.$buttons.unbind('click').addClass('sleep');
 		getNumber(function(num) {
-			// $(that).siblings().filter('.unfinish').removeClass('sleep').addClass('active').bind('click', five_click_generator(self));
 			$(that).find('.unread').text(num);
 			$(that).removeClass('active unfinish').addClass('sleep');
 			self.cnt++;
@@ -79,22 +75,3 @@ function getNumber(callback) {
 	// })
 	// .done(callback);
 }
-// window.onload = function() {
-// 	function ajax () {
-// 		var posted = document.querySelectorAll('.posted span')[0];
-// 		var request = new XMLHttpRequest();
-// 		request.open('get', "/path?what=num");
-// 		request.send(null);
-// 		request.onreadystatechange = function() {
-// 			if (request.readyState == 4 && request.status == 200) {
-// 				var type = request.getResponseHeader('Content-Type');
-// 				if (type.match(/.*json/)) {
-// 					var data = JSON.parse(request.responseText);
-// 					posted.textContent = data.num;
-// 				}
-// 			}
-// 		};
-// 	}
-// 	var img_posted = document.querySelectorAll('.posted img')[0];
-// 	img_posted.addEventListener('click', ajax);
-// };
